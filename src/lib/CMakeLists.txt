@@ -1,4 +1,4 @@
-add_library(velodyne_rawdata_oru rawdata.cc calibration.cc)
+add_library(velodyne_rawdata_oru rawdata.cc calibration.cc ../conversions/pointcloudXYZIR.cc)
 target_link_libraries(velodyne_rawdata_oru
                       ${catkin_LIBRARIES}
                       ${YAML_CPP_LIBRARIES})

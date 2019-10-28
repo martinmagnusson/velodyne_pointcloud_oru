@@ -17,13 +17,11 @@ set(${PROJECT_NAME}_CATKIN_DEPS
     roslib
     sensor_msgs
     tf
-    velodyne_driver
-    velodyne_msgs
     dynamic_reconfigure
     diagnostic_updater
 )
 
-find_package(catkin REQUIRED COMPONENTS
+find_package(catkin REQUIRED COMPONENTS velodyne_driver velodyne_msgs
              ${${PROJECT_NAME}_CATKIN_DEPS}
              roslint)
 
@@ -56,7 +54,7 @@ include_directories(include ${catkin_INCLUDE_DIRS}
 )
 
 catkin_package(
-    CATKIN_DEPENDS ${${PROJECT_NAME}_CATKIN_DEPS}
+    CATKIN_DEPENDS ${${PROJECT_NAME}_CATKIN_DEPS} velodyne_driver velodyne_msgs
     INCLUDE_DIRS include
     LIBRARIES velodyne_rawdata_oru)
 
