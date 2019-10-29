@@ -1,6 +1,11 @@
 Change history
 ==============
 
+Forthcoming
+-----------
+* Removed  author and updated maintainer.
+* Contributors: dan11003
+
 1.5.3 (2019-10-29)
 ------------------
 
