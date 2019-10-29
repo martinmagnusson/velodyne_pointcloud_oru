@@ -10,7 +10,7 @@ find_package(tf2_ros REQUIRED)
 # C++ gtests
 catkin_add_gtest(test_calibration_oru test_calibration.cpp)
 add_dependencies(test_calibration_oru ${catkin_EXPORTED_TARGETS})
-target_link_libraries(test_calibration_oru velodyne_rawdata ${catkin_LIBRARIES})
+target_link_libraries(test_calibration_oru velodyne_rawdata_oru ${catkin_LIBRARIES})
 
 # Download packet capture (PCAP) files containing test data.
 # Store them in devel-space, so rostest can easily find them.
