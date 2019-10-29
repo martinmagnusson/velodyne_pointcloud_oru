@@ -33,7 +33,7 @@
   <depend>diagnostic_updater</depend>
   <depend>eigen</depend>
 
-  <exec_depend>velodyne_laserscan</exec_depend>
+  <exec_depend>velodyne</exec_depend>
   <exec_depend>velodyne_driver</exec_depend>
   <exec_depend>velodyne_msgs</exec_depend>
 
