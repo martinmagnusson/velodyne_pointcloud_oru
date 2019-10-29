@@ -1,8 +1,8 @@
 Change history
 ==============
 
-Forthcoming
------------
+1.5.4 (2019-10-29)
+------------------
 * Removed  author and updated maintainer.
 * Contributors: dan11003
 
