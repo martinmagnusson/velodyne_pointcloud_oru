@@ -1,6 +1,9 @@
 Change history
 ==============
 
+Forthcoming
+-----------
+
 1.5.2 (2019-01-28)
 ------------------
 * Merge pull request `#205 <https://github.com/ros-drivers/velodyne/issues/205>`_ from xiesc/master
