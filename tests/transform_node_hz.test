@@ -12,7 +12,7 @@
   </node>
 
   <!-- start transform node with test calibration file -->
-  <node pkg="velodyne_pointcloud_oru" type="transform_node" name="transform_node">
+  <node pkg="velodyne_pointcloud_oru" type="transform_node_oru" name="transform_node_oru">
     <param name="calibration"
            value="$(find velodyne_pointcloud_oru)/tests/angles.yaml"/>
   </node>

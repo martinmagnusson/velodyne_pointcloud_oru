@@ -10,7 +10,7 @@
   </node>
 
   <!-- start cloud node with test calibration file -->
-  <node pkg="velodyne_pointcloud_oru" type="cloud_node" name="cloud_node">
+  <node pkg="velodyne_pointcloud_oru" type="cloud_node_oru" name="cloud_node_oru">
     <param name="calibration"
            value="$(find velodyne_pointcloud_oru)/params/32db.yaml"/>
   </node>
