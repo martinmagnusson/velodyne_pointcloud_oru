@@ -3,18 +3,14 @@
   <name>velodyne_pointcloud_oru</name>
   <version>1.5.3</version>
   <description>
-    Point cloud conversions for Velodyne 3D LIDARs.
+    Copy of velodyne_pointcloud - Point cloud conversions for Velodyne 3D LIDARs.
   </description>
-  <maintainer email="jwhitley@autonomoustuff.com">Josh Whitley</maintainer>
-  <author>Jack O'Quin</author>
-  <author>Piyush Khandelwal</author>
-  <author>Jesse Vera</author>
-  <author>Sebastian Pütz</author>
+  <maintainer email="daniel.adolfsson@oru.se">Daniel Adolfsson</maintainer>
+  
   <license>BSD</license>
-  <url type="website">http://ros.org/wiki/velodyne_pointcloud</url>
-  <url type="repository">https://github.com/ros-drivers/velodyne</url>
-  <url type="bugtracker">https://github.com/ros-drivers/velodyne/issues</url>
-
+  
+  <url type="repository">https://github.com/dan11003/velodyne_pointcloud_oru</url>
+  
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>roslint</build_depend>
