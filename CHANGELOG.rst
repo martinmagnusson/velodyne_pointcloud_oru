@@ -1,8 +1,8 @@
 Change history
 ==============
 
-Forthcoming
------------
+1.5.5 (2019-10-30)
+------------------
 * Update cloud_node_vlp16_hz.test
   reduced minimum frequency required.
 * Update cloud_nodelet_32e_hz.test
