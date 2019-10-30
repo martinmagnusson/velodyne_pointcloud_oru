@@ -1,6 +1,16 @@
 Change history
 ==============
 
+Forthcoming
+-----------
+* Update cloud_node_vlp16_hz.test
+  reduced minimum frequency required.
+* Update cloud_nodelet_32e_hz.test
+  reduced minimum frequency requirement for unit test
+* updated tests
+* updated name in unit tests
+* Contributors: dan11003, daniel
+
 1.5.4 (2019-10-29)
 ------------------
 * Removed  author and updated maintainer.
