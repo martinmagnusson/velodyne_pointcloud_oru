@@ -36,6 +36,7 @@
 
 namespace velodyne_rawdata_oru
 {
+bool RawData::unpack_invalid_returns = true;
 inline float SQR(float val) { return val*val; }
 
   ////////////////////////////////////////////////////////////////////////
@@ -195,11 +196,14 @@ inline float SQR(float val) { return val*val; }
         union two_bytes tmp;
         tmp.bytes[0] = block.data[k];
         tmp.bytes[1] = block.data[k+1];
-        if (tmp.bytes[0]==0 &&tmp.bytes[1]==0 ) //no laser beam return
-        {
-          continue;
+        if (tmp.bytes[0]==0 &&tmp.bytes[1]==0 ){ //no laser beam return
+          if(unpack_invalid_returns){ //This point can carry useful informaton, lets use it if the flag is set.
+            data.addPoint(/*x_coord*/0, /*y_coord*/0, /*z_coord*/0, corrections.laser_ring, raw->blocks[i].rotation, -1/*distance*/, corrections.min_intensity/*intensity*/);
+            continue;
+          }
+          else //In most cases ignore this point
+            continue;
         }
-
         /*condition added to avoid calculating points which are not
           in the interesting defined area (min_angle < area < max_angle)*/
         if ((block.rotation >= config_.min_angle

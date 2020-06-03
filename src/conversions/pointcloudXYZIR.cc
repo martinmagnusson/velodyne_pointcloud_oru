@@ -36,7 +36,11 @@ namespace velodyne_pointcloud_oru
 
   void PointcloudXYZIR::addPoint(float x, float y, float z, uint16_t ring, uint16_t /*azimuth*/, float distance, float intensity)
   {
-    if(!pointInRange(distance)) return;
+    bool use_invalid_return = false;
+    if( fabs(distance-(-1))<DBL_EPSILON)
+      use_invalid_return = true;
+
+    if(!use_invalid_return && !pointInRange(distance)) return;
 
     // convert polar coordinates to Euclidean XYZ
 

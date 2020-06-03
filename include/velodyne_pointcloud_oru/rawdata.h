@@ -168,6 +168,7 @@ public:
 
   int scansPerPacket() const;
 
+  static bool unpack_invalid_returns;
 private:
   /** configuration parameters */
   typedef struct
