@@ -1,8 +1,8 @@
 Change history
 ==============
 
-Forthcoming
------------
+1.5.6 (2020-06-10)
+------------------
 * added functionallity to unpack pointcloud without filtering non-returns
 * Contributors: dla.adolfsson@gmail.com
 

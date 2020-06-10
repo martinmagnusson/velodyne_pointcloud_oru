@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>velodyne_pointcloud_oru</name>
-  <version>1.5.5</version>
+  <version>1.5.6</version>
   <description>
     Copy of velodyne_pointcloud - Point cloud conversions for Velodyne 3D LIDARs.
   </description>
