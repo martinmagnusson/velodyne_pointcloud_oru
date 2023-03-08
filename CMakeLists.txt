@@ -26,6 +26,7 @@ find_package(catkin REQUIRED COMPONENTS velodyne_driver velodyne_msgs
              roslint)
 
 find_package(Boost COMPONENTS signals)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DBOOST_ERROR_CODE_HEADER_ONLY") 
 find_package(Eigen3 REQUIRED)
 # Resolve system dependency on yaml-cpp, which apparently does not
 # provide a CMake find_package() module.
